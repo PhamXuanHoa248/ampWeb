@@ -1,0 +1,108 @@
+<!doctype html>
+<html ⚡>
+<head>
+
+    <meta charset="utf-8" />
+    <title>AmpWeb</title>
+    <link rel="canonical" href="self.html" />
+    <meta name="viewport" content="width=device-width" />
+    <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+    <script async custom-element="amp-base-carousel" src="https://cdn.ampproject.org/v0/amp-base-carousel-0.1.js"></script>
+    
+  
+  <style amp-custom>
+    
+      h1 {
+        margin: 1rem;
+        
+      }
+       body {
+        background-color: blanchedalmond;
+        font-family: "Segoe UI",Arial,sans-serif;
+      }
+      #main-menu{
+    overflow: hidden;
+    background-color: blue;
+    display: flex;
+    height: 2.5em;
+    line-height: 2.5em;
+    justify-content: space-between;
+    
+}
+.menu {
+    display: flex;
+    color: white;
+}
+
+.menu li {
+    padding-left: 1.5em;
+    text-align: center;
+    padding: 0px 25px;
+    list-style-type: none;
+    text-decoration: none;
+}
+.menu li a{
+    color: white;
+}
+.menu li a:hover {
+    color: black;
+    background-color:cornsilk;
+}
+
+.menu-down{
+    background-color: white;
+    width: 130px;
+    position: absolute;
+    left: 398px;
+    display: none;
+}
+.menu-down li{  
+    text-align: left;
+    padding: 0px;
+
+}
+.menu-down li a{
+    list-style-type: none;
+    text-decoration: none;
+    color: black;
+}
+.menu-down li a:hover{
+    background-color:cornsilk;
+}
+.menu .menu-link:hover .menu-down{
+    display: block;
+}
+    
+  </style>
+</head>
+<body>
+   
+    <h1 id="hello">Hello AMPHTML World!</h1>
+    <div id="main-menu">           
+        <ul class="menu">
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">BAND</a></li>
+            <li><a href="#">TOUR</a></li>
+            <li><a href="#">CONTACT</a></li>
+            <li class="menu-link"><a href="">MORE</a>
+                <ul class="menu-down">
+                    <li><a href="">Merchandise</a></li>
+                    <li><a href="">Extras</a></li>
+                </ul>
+            </li>
+        </ul>
+        <a href="" class="logo">LOGO</a>
+    </div>
+    <amp-base-carousel loop="true"  width="600" height="400" layout="responsive">
+        <amp-img src="../AmpWeb/image/imager_6263.jpg" width="600" height="400" layout="responsive"></amp-img>
+        <amp-img src="../AmpWeb/image/bg.jpg" width="600" height="400" layout="responsive"></amp-img>
+        <amp-img src="../AmpWeb/image/hinh-nen-may-tinh-dep-anime.jpg" width="600" height="400" layout="responsive"></amp-img>
+        <amp-img src="../AmpWeb/image/imager_6263.jpg" width="600" height="400" layout="responsive"></amp-img>
+    </amp-base-carousel>
+    <button on="tap:hello.hide">
+      Footer AmpWebsite
+	</button>
+  
+</body>
+</html>
